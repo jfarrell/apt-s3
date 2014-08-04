@@ -17,3 +17,5 @@ build/apt-transport-s3::
 install/apt-transport-s3::
 	@cp $(CURDIR)/src/s3 $(DEB_DIR)/usr/lib/apt/methods/
 
+clean::
+	$(MAKE) -f $(CURDIR)/Makefile clean
